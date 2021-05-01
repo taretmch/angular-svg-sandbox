@@ -1,6 +1,7 @@
-import { NgModule } from '@angular/core';
+import { NgModule }            from '@angular/core';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
-import { SharedModule }     from '@lib/shared';
+import { environment }      from '../environments/environment';
 import { SharedModule }     from '@lib/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent }     from './app';
@@ -13,6 +14,7 @@ import { TopModule }        from './top';
   imports: [
     SharedModule,
     AppRoutingModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     TopModule,
   ],
   providers: [],

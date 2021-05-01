@@ -2,13 +2,15 @@ import { NgModule }                from '@angular/core';
 import { BrowserModule }           from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-const modules = [
+const MODULES = [
+  // Angular modules
   BrowserModule,
-  BrowserAnimationsModule
+  BrowserAnimationsModule,
+  // Custom modules
 ]
 
 @NgModule({
-  imports: modules,
-  exports: modules
+  imports: MODULES,
+  exports: MODULES
 })
 export class SharedModule { }

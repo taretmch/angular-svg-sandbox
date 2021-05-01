@@ -1,10 +1,10 @@
 import { NgModule }             from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import * as top from './top';
+import { TopComponent } from './top';
 
 const routes: Routes = [
-  { path: '', component: top.PageMainComponent }
+  { path: '', component: TopComponent }
 ];
 
 @NgModule({

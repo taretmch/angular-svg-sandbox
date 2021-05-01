@@ -1,1 +1,1 @@
-export * from './page-main'
+export * from './top.component'

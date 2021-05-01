@@ -6,5 +6,16 @@
     [attr.height]  = "viewBox.height"
     [attr.viewBox] = "viewBox | svgViewBox"
     style          = 'background: gray'>
+    <ng-container *ngFor="let x of xs; index as n">
+      <svg:line
+        *ngIf              = "n > 0"
+        [attr.x1]          = "xs[n - 1]"
+        [attr.y1]          = "ys[n - 1]"
+        [attr.x2]          = "x"
+        [attr.y2]          = "ys[n]"
+        [attr.stroke]      = "color"
+        [attr.strokeWidth] = "2"
+      ></svg:line>
+    </ng-container>
   </svg>
 </div>

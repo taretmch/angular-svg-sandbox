@@ -1,14 +1,12 @@
-import { NgModule }                from '@angular/core';
-import { BrowserModule }           from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgModule } from '@angular/core';
 
-import { PipeModule } from './pipe';
-import { UIModule }   from './ui';
+import { VendorModule } from './vendor.module';
+import { PipeModule }   from './pipe';
+import { UIModule }     from './ui';
 
 const MODULES = [
   // Angular modules
-  BrowserModule,
-  BrowserAnimationsModule,
+  VendorModule,
   // Custom modules
   PipeModule,
   UIModule,

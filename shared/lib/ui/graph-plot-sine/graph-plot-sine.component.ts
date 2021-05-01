@@ -1,5 +1,8 @@
 import { Component, Input } from '@angular/core';
 
+/**
+ * Graph for sine curve
+ */
 @Component({
   selector:  'ngx-graph-plot-sine',
   templateUrl: './graph-plot-sine.component.html',
@@ -19,9 +22,10 @@ export class GraphPlotSineComponent {
   /**
    * Plot configuration
    */
-  @Input() x0:       number = - Math.PI / 2
-  @Input() xN:       number = Math.PI / 2
+  @Input() x0:       number = - Math.PI
+  @Input() xN:       number = Math.PI
   @Input() division: number = 100
+  @Input() color:    string = 'black'
 
   /**
    * Plot value
@@ -63,12 +67,7 @@ export class GraphPlotSineComponent {
     const maxXPlotValue = this.width / 2 - this.padding
     const maxYPlotValue = this.height / 2 - this.padding
     this.xs = xs.map(x => (x * maxXPlotValue / maxX))
-    this.ys = ys.map(y => (y * maxYPlotValue / maxY))
-
-    console.log(xs)
-    console.log(ys)
-    console.log(this.xs)
-    console.log(this.ys)
+    this.ys = ys.map(y => - (y * maxYPlotValue / maxY))
 
     /**
      * Canvas configuration
@@ -87,8 +86,6 @@ export class GraphPlotSineComponent {
    */
   private applyFunction(x: number): number {
     const sinX = Math.sin(x)
-    // For debug
-    console.log('pair (x, sin x): ', x, sinX)
     return sinX
   }
 }

@@ -3,6 +3,7 @@ import { BrowserModule }           from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { PipeModule } from './pipe';
+import { UIModule }   from './ui';
 
 const MODULES = [
   // Angular modules
@@ -10,6 +11,7 @@ const MODULES = [
   BrowserAnimationsModule,
   // Custom modules
   PipeModule,
+  UIModule,
 ]
 
 @NgModule({

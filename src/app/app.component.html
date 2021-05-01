@@ -1,0 +1,24 @@
+<div class="content">
+  <!-- Header -->
+  <div class="content__header">
+    <a class="content__header-link" routerLink="/">SVG sandbox with Angular</a>
+  </div>
+
+  <!-- Container -->
+  <mat-sidenav-container class="content__section container">
+
+    <!-- Side navigation -->
+    <mat-sidenav class="sidenav" mode="side" opened>
+      <mat-nav-list class="list">
+        <a mat-list-item class="list__item-link" routerLink="/">トップ</a>
+        <a mat-list-item class="list__item-link" routerLink="/sine/line">Sin 関数 (svg:line)</a>
+      </mat-nav-list>
+    </mat-sidenav>
+  
+    <!-- Main content -->
+    <mat-sidenav-content class="main-content">
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+
+  </mat-sidenav-container>
+</div>

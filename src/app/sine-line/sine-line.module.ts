@@ -4,15 +4,15 @@ import { SharedModule } from '@lib/shared.module';
 import * as components  from './components';
 
 const MODULES = [
-  SharedModule,
+  SharedModule
 ]
 
 const COMPONENTS = [
-  components.TopComponent
+  components.SineLineComponent
 ]
 
 @NgModule({
   imports:      MODULES,
   declarations: COMPONENTS
 })
-export class TopModule {}
+export class SineLineModule {}

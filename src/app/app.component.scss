@@ -1,0 +1,22 @@
+@import 'variables';
+
+:host {
+  // Header
+  .content__header {
+    background:  map-get($mat-blue, 700);
+    box-sizing:  border-box;
+    color:       white;
+    font-size:   $font-size-base;
+    height:      $app-bar-height;
+    line-height: $app-bar-height;
+    padding:     0 $space-size-small;
+  }
+  // Section: Container
+  .content__section.container {
+    bottom:   0;
+    left:     0;
+    position: absolute;
+    right:    0;
+    top:      $app-bar-height;
+  }
+}

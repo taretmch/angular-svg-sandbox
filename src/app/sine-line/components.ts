@@ -1,1 +1,1 @@
-export * from './sine-line.component'
+export * from './sine-line.component';

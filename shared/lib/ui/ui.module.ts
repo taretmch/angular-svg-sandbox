@@ -4,7 +4,7 @@ import { GraphPlotSineModule } from './graph-plot-sine';
 
 const MODULES = [
   GraphPlotSineModule,
-]
+];
 
 @NgModule({
   imports: MODULES,

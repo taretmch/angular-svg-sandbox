@@ -1,2 +1,2 @@
-export * from './components'
-export * from './sine-line.module'
+export * from './components';
+export * from './sine-line.module';

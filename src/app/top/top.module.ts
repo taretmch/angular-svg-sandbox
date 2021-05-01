@@ -5,11 +5,11 @@ import * as components  from './components';
 
 const MODULES = [
   SharedModule,
-]
+];
 
 const COMPONENTS = [
   components.TopComponent
-]
+];
 
 @NgModule({
   imports:      MODULES,

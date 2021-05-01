@@ -7,11 +7,11 @@ import { GraphPlotSineComponent } from './graph-plot-sine.component';
 const MODULES = [
   VendorModule,
   PipeModule
-]
+];
 
 const COMPONENTS = [
   GraphPlotSineComponent
-]
+];
 
 @NgModule({
   imports:      MODULES,

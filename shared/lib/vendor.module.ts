@@ -14,7 +14,7 @@ const MODULES = [
   // Angular Material
   MatListModule,
   MatSidenavModule,
-]
+];
 
 @NgModule({
   imports: MODULES,

@@ -1,2 +1,2 @@
-export * from './components'
-export * from './top.module'
+export * from './components';
+export * from './top.module';

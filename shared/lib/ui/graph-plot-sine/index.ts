@@ -1,1 +1,1 @@
-export * from './graph-plot-sine.module'
+export * from './graph-plot-sine.module';

@@ -10,7 +10,7 @@ const MODULES = [
   // Custom modules
   PipeModule,
   UIModule,
-]
+];
 
 @NgModule({
   imports: MODULES,

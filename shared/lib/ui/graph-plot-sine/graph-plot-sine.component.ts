@@ -25,7 +25,7 @@ export class GraphPlotSineComponent {
   @Input() x0:       number = - Math.PI
   @Input() xN:       number = Math.PI
   @Input() division: number = 100
-  @Input() color:    string = 'black'
+  @Input() color:    string = 'blue'
 
   /**
    * Plot value

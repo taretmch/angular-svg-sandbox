@@ -5,7 +5,73 @@
     [attr.width]   = "viewBox.width"
     [attr.height]  = "viewBox.height"
     [attr.viewBox] = "viewBox | svgViewBox"
-    style          = 'background: gray'>
+    style          = 'border: 1px solid black'>
+    <!-- Horizontal axis -->
+    <svg:line
+      [attr.x1]          = "- (width - padding) / 2"
+      [attr.y1]          = "0"
+      [attr.x2]          = "(width - padding) / 2"
+      [attr.y2]          = "0"
+      stroke             = 'black'
+      [attr.strokeWidth] = "2"
+    ></svg:line>
+    <svg:line
+      [attr.x1]          = "(width - padding) / 2 - 10"
+      [attr.y1]          = "10"
+      [attr.x2]          = "(width - padding) / 2"
+      [attr.y2]          = "0"
+      stroke             = 'black'
+      [attr.strokeWidth] = "2"
+    ></svg:line>
+    <svg:line
+      [attr.x1]          = "(width - padding) / 2 - 10"
+      [attr.y1]          = "-10"
+      [attr.x2]          = "(width - padding) / 2"
+      [attr.y2]          = "0"
+      stroke             = 'black'
+      [attr.strokeWidth] = "2"
+    ></svg:line>
+    <svg:text
+      [attr.x] = "(width - padding) / 2 + 10"
+      [attr.y] = "5"
+    >x</svg:text>
+
+    <!-- Vertical axis -->
+    <svg:line
+      [attr.x1]          = "0"
+      [attr.y1]          = "- (height - padding) / 2"
+      [attr.x2]          = "0"
+      [attr.y2]          = "(height - padding) / 2"
+      stroke             = 'black'
+      [attr.strokeWidth] = "2"
+    ></svg:line>
+    <svg:line
+      [attr.x1]          = "-10"
+      [attr.y1]          = "- (height - padding) / 2 + 10"
+      [attr.x2]          = "0"
+      [attr.y2]          = "- (height - padding) / 2"
+      stroke             = 'black'
+      [attr.strokeWidth] = "2"
+    ></svg:line>
+    <svg:line
+      [attr.x1]          = "10"
+      [attr.y1]          = "- (height - padding) / 2 + 10"
+      [attr.x2]          = "0"
+      [attr.y2]          = "- (height - padding) / 2"
+      stroke             = 'black'
+      [attr.strokeWidth] = "2"
+    ></svg:line>
+    <svg:text
+      [attr.x] = "-5"
+      [attr.y] = "- (height - padding) / 2 - 10"
+    >y</svg:text>
+
+    <svg:text
+      [attr.x] = "5"
+      [attr.y] = "20"
+    >O</svg:text>
+
+    <!-- Sine curve -->
     <ng-container *ngFor="let x of xs; index as n">
       <svg:line
         *ngIf              = "n > 0"

@@ -14,18 +14,18 @@ export class GraphPlotSineComponent implements OnInit {
   /**
    * Canvas size
    */
-  @Input() width = 800;
-  @Input() height = 600;
-  padding = 100;
+  @Input() width:  number = 800;
+  @Input() height: number = 600;
+  padding:         number = 100;
   viewBox: { x: number, y: number, width: number, height: number };
 
   /**
    * Plot configuration
    */
-  @Input() x0: number = - Math.PI;
-  @Input() xN: number = Math.PI;
-  @Input() division = 100;
-  @Input() color = 'blue';
+  @Input() x0:       number = - Math.PI;
+  @Input() xN:       number = Math.PI;
+  @Input() division: number = 100;
+  @Input() color:    string = 'blue';
 
   /**
    * Plot value
@@ -42,10 +42,10 @@ export class GraphPlotSineComponent implements OnInit {
    */
   ngOnInit(): void {
     const deltaX = (this.xN - this.x0) / this.division;
-    const xs   = [this.x0];
-    const ys   = [this.applyFunction(this.x0)];
-    const maxX = Math.max(Math.abs(this.x0), Math.abs(this.xN));
-    let   maxY = Math.abs(ys[0]);
+    const xs     = [this.x0];
+    const ys     = [this.applyFunction(this.x0)];
+    const maxX   = Math.max(Math.abs(this.x0), Math.abs(this.xN));
+    let   maxY   = Math.abs(ys[0]);
 
     /**
      * Calculate approximate values
@@ -66,8 +66,8 @@ export class GraphPlotSineComponent implements OnInit {
      */
     const maxXPlotValue = this.width / 2 - this.padding;
     const maxYPlotValue = this.height / 2 - this.padding;
-    this.xs = xs.map(x => (x * maxXPlotValue / maxX));
-    this.ys = ys.map(y => - (y * maxYPlotValue / maxY));
+    this.xs             = xs.map(x => (x * maxXPlotValue / maxX));
+    this.ys             = ys.map(y => - (y * maxYPlotValue / maxY));
 
     /**
      * Canvas configuration

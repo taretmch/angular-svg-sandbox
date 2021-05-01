@@ -1,7 +1,7 @@
 /**
  * Configuration of viewBox
  */
-export class ViewBoxConf {
+export interface ViewBoxConf {
   x:      number  // Minimum x of viewBox
   y:      number  // Minimum y of viewBox
   width:  number  // Width of viewBox

@@ -8,4 +8,15 @@ import { Component } from '@angular/core';
   styleUrls:  ['./sine-polyline.component.scss']
 })
 export class SinePolylineComponent {
+
+  /**
+   * Code block
+   */
+  code = `<!-- Sine curve -->
+<svg:polyline
+  [attr.points] = "points | svgPoints"
+  fill = 'none'
+  [attr.stroke] = "color"
+  [attr.strokeWidth] = "2"
+/>`;
 }

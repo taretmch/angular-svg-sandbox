@@ -29,6 +29,7 @@
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
+              "./node_modules/highlight.js/styles/github.css",
               "src/styles.scss"
             ],
             "stylePreprocessorOptions": {
@@ -36,7 +37,10 @@
                 "./shared/scss"
               ]
             },
-            "scripts": []
+            "scripts": [],
+            "allowedCommonJsDependencies": [
+              "highlight.js"
+            ]
           },
           "configurations": {
             "production": {

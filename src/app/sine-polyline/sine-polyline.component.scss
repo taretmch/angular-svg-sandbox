@@ -1,0 +1,14 @@
+@import 'variables';
+
+:host {
+  .content {
+    padding: $space-size-base;
+  }
+  .content__section {
+    margin-bottom: $space-size-base;
+  }
+  .header {
+    font-size:   $font-size-medium;
+    font-weight: 500;
+  }
+}

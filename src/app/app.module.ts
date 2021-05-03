@@ -1,12 +1,13 @@
 import { NgModule }            from '@angular/core';
 import { ServiceWorkerModule } from '@angular/service-worker';
 
-import { environment }      from '../environments/environment';
-import { SharedModule }     from '@lib/shared.module';
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent }     from './app.component';
-import { TopModule }        from './top';
-import { SineLineModule }   from './sine-line';
+import { environment }       from '../environments/environment';
+import { SharedModule }      from '@lib/shared.module';
+import { AppRoutingModule }  from './app-routing.module';
+import { AppComponent }      from './app.component';
+import { TopModule }         from './top';
+import { SineLineModule }    from './sine-line';
+import { SinePolylineModule } from './sine-polyline';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { SineLineModule }   from './sine-line';
     AppRoutingModule,
     // Page modules
     SineLineModule,
+    SinePolylineModule,
     TopModule,
   ],
   providers: [],

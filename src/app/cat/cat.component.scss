@@ -1,0 +1,24 @@
+@import 'variables';
+
+:host {
+  .content {
+    padding: $space-size-base;
+  }
+  .content__section {
+    margin-bottom: $space-size-base;
+  }
+  .header {
+    font-size:   $font-size-medium;
+    font-weight: 500;
+  }
+  .body__item {
+    margin-bottom: $space-size-medium;
+  }
+  .code__title {
+    border-left:  4px solid map-get($mat-grey, 700);
+    color:        map-get($mat-grey, 700);
+    font-size:    $font-size-small;
+    font-weight:  500;
+    padding-left: $space-size-micro;
+  }
+}
